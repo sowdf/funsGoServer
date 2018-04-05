@@ -1,0 +1,42 @@
+{
+  "name": "ued",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "h5_dev": "parcel watch ./views/h5/js/app.js --no-cache --out-dir ./public/dist/h5",
+    "h5_build": "parcel build ./views/h5/js/app.js --no-cache --out-dir ./public/dist/h5",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sowdf/ued.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sowdf/ued/issues"
+  },
+  "homepage": "https://github.com/sowdf/ued#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "body-parser": "^1.18.2",
+    "cookies": "^0.7.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "later": "^1.2.0",
+    "md5": "^2.2.1",
+    "multer": "^1.3.0",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.1",
+    "pg": "^7.4.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.28.6",
+    "sqlite3": "^3.1.13",
+    "tedious": "^2.1.5"
+  },
+  "devDependencies": {
+    "node-sass": "^4.8.3",
+    "request": "^2.83.0"
+  }
+}

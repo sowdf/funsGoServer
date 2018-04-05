@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/dist/h5/app.css">
+    <title>FunsGo分享页</title>
+    <script>
+         !function (a) {
+                     function b() {
+                         a.rem = f.getBoundingClientRect().width / 16, f.style.fontSize = a.rem + "px";
+                         var j = parseFloat(a.getComputedStyle(f, null).fontSize);
+                         if (a.rem != j) {
+                             a.rem = a.rem * a.rem / j;
+                             f.style.fontSize = a.rem + "px"
+                         }
+                     }
+
+                     var c, d = a.navigator.appVersion.match(/iphone/gi) ? a.devicePixelRatio : 1,
+                         e = 1,
+                         f = document.documentElement,
+                         g = document.createElement("meta");
+                     if (a.dpr = d, a.addEventListener("resize", function () {
+                             clearTimeout(c), c = setTimeout(b, 300)
+                         }, !1), a.addEventListener("pageshow", function (a) {
+                             a.persisted && (clearTimeout(c), c = setTimeout(b, 300))
+                         }, !1), f.setAttribute("data-dpr", d), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + e + ", maximum-scale=" + e + ", minimum-scale=" + e + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g);
+                     else {
+                         var h = document.createElement("div");
+                         h.appendChild(g), document.write(h.innerHTML)
+                     }
+                     b()
+                 }(window);
+    </script>
+</head>
+<body>
+<div class="m_banner">
+    <div class="flag">
+        # <%=info.tag_name%> #
+    </div>
+    <img src="<%-info.img_url%>" alt="">
+</div>
+<div class="m_content">
+    <div class="title">
+        <%-info.title%>
+        <p>
+            <i></i>浏览 <em><%=info.num_view%></em>次
+        </p>
+    </div>
+    <%-info.content%>
+</div>
+<div class="m_download">
+    <div class="pic">
+        <img src="" alt="">
+    </div>
+    <div class="info">
+        <strong>FUNSGO嗨玩</strong>
+        <p>该活动已有<%=info.num_view%>人参加</p>
+    </div>
+    <a class="btn" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.funsgo&from=groupmessage
+">
+        下载FunsGo
+    </a>
+</div>
+
+<script src="/dist/h5/app.js"></script>
+</body>
+</html>

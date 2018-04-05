@@ -1,0 +1,116 @@
+@import "./reset";
+@import "./function";
+@import "./component";
+.m_banner {
+  width:100%;
+  position: relative;
+  .flag {
+    position: absolute;
+    bottom:0;
+    left:rem(-20);
+    background:#000;
+    color: #ffffff;
+    width:rem(78);
+    height:rem(273);
+    font-size:rem(22);
+    writing-mode:tb-rl;
+    -webkit-writing-mode:tb-rl;
+    -moz-writing-mode:tb-rl;
+    box-sizing: border-box;
+    padding-right:rem(20);
+    text-align:center;
+
+  }
+  img {
+    display: block;
+    width:100%;
+    height:auto;
+  }
+
+}
+.m_content  {
+  padding:0 rem(78) rem(180);
+  font-size:rem(24);
+  color: #8d8d8d;
+  line-height: rem(40);
+  .title {
+    font-size:rem(35);
+    color: #000;
+    line-height: rem(48);
+    padding:rem(25) 0;
+    border-bottom:solid rem(2) #e5e5e5;
+    margin-bottom:rem(25);
+    p {
+      color: #a3a3a3;
+      font-size:rem(15);
+      line-height: 1;
+      padding-top:rem(15);
+    }
+    i {
+      display: inline-block;
+      width: rem(22);
+      height: rem(17);
+      margin-right:rem(6);
+      vertical-align: middle;
+      position: relative;
+      top: rem(-2);
+      background:url("../images/icon_nowView.png") no-repeat;
+      background-size:100% auto;
+    }
+    em {
+      color: #000;
+    }
+  }
+  img {
+    margin:rem(30) 0;
+    width:100%;
+    height:auto;
+    border-radius:rem(15);
+  }
+}
+.m_download {
+  position: fixed;
+  bottom:rem(30);
+  left: rem(35);
+  width: rem(568);
+  height: rem(128);
+  border-radius:rem(21);
+  box-shadow: 0 0 rem(8) rem(1) rgba(0,0,0,0.3);
+  background:#fff;
+  .pic {
+    position: absolute;
+    left: rem(20);
+    top: rem(21);
+    width: rem(86);
+    height: rem(86);
+    background:url("../images/icon_logon.png") no-repeat;
+    background-size: 100% auto;
+  }
+  .info {
+    margin-left: rem(119);
+    padding-top:rem(21);
+    p {
+      line-height: 1;
+      font-size:rem(20);
+      color: #a7a7a7;
+    }
+    strong {
+      line-height: rem(50);
+      font-size:rem(24);
+
+    }
+  }
+  .btn {
+    position: absolute;
+    top: rem(34);
+    right: rem(28);
+    width:rem(156);
+    height: rem(60);
+    line-height: rem(60);
+    text-align: center;
+    font-size:rem(20);
+    color: #ffffff;
+    background: #000;
+    border-radius:rem(30)
+  }
+}
