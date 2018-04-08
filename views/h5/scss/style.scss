@@ -14,8 +14,8 @@
     height:rem(273);
     font-size:rem(22);
     writing-mode:tb-rl;
-    -webkit-writing-mode:tb-rl;
     -moz-writing-mode:tb-rl;
+    -webkit-writing-mode:tb-rl;
     box-sizing: border-box;
     padding-right:rem(20);
     text-align:center;
@@ -112,5 +112,13 @@
     color: #ffffff;
     background: #000;
     border-radius:rem(30)
+  }
+}
+.m_time,.m_address,.m_tips {
+  margin:rem(10) 0;
+  font-size:rem(24);
+  dt {
+    color: #000;
+    font-weight: bold;
   }
 }

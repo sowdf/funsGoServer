@@ -50,14 +50,39 @@
         </p>
     </div>
     <%-info.content%>
+    <dl class="m_time">
+        <dt>
+            活动时间
+        </dt>
+        <dd>
+            <%= info.s_time%> - <%= info.e_time%>
+        </dd>
+    </dl>
+    <dl class="m_address">
+        <dt>
+            <%= info.content_ext.place.title%>
+        </dt>
+        <dd>
+            <%= info.content_ext.place.value.name%>
+        </dd>
+    </dl>
+    <dl class="m_tips">
+        <dt>
+            <%= info.content_ext.note.title%>
+        </dt>
+        <dd>
+            <%= info.content_ext.note.value%>
+        </dd>
+    </dl>
 </div>
+
 <div class="m_download">
     <div class="pic">
         <img src="" alt="">
     </div>
     <div class="info">
         <strong>FUNSGO嗨玩</strong>
-        <p>该活动已有<%=info.num_view%>人参加</p>
+        <p>该活动已有<%=info.num_fq%>人参加</p>
     </div>
     <a class="btn" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.funsgo&from=groupmessage
 ">

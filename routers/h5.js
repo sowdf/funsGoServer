@@ -8,6 +8,19 @@ const request = require('request');
  *
  * */
 
+function formatTime(sj)
+{
+    let now = new Date(sj*1000);
+    let   year=now.getFullYear();
+    let   month=now.getMonth()+1;
+    let   date=now.getDate();
+    let   hour=now.getHours();
+    let   minute=now.getMinutes();
+    let   second=now.getSeconds();
+    return   year+"-"+month+"-"+date;
+    
+}
+
 router.get('/huodong-detail.html',(req,res,next)=>{
     let {query:{id}} = req;
     console.log(id);
@@ -16,6 +29,10 @@ router.get('/huodong-detail.html',(req,res,next)=>{
         let re = /\[[^\]]+\]/gi;
         let styleRe = /style\s*?=\s*?([‘"])[\s\S]*?\1/gi;
         info.content = info.content.replace(re,'').replace(styleRe,'');
+        info.s_time = formatTime(info.s_time);
+        info.e_time = formatTime(info.e_time);
+        console.log(info);
+        console.log(info.content_ext.place.value);
         return res.render('h5/share.html',{info});
     });
 
