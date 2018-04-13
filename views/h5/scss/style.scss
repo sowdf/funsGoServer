@@ -114,11 +114,24 @@
     border-radius:rem(30)
   }
 }
+
 .m_time,.m_address,.m_tips {
-  margin:rem(10) 0;
+  margin:rem(20) 0 rem(30);
   font-size:rem(24);
   dt {
-    color: #000;
+    color: #486f6e;
     font-weight: bold;
+    margin:rem(10) 0;
+  }
+  dd {
+    color: #101010;
+  }
+}
+
+.m_time {
+  margin-top:rem(40);
+  dd {
+    font-size:rem(36);
+
   }
 }
